@@ -18,4 +18,5 @@ func (this *IndexClass)GetIndex(ctx *gin.Context) string  {
 }
 func (this *IndexClass) Build(gtr *gtr.Gtr)  {
 	gtr.Handle("GET","/index",this.GetIndex)
+	gtr.Handle("GET","/index2",this.GetIndex)
 }
